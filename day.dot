@@ -1,0 +1,28 @@
+digraph G {
+    graph [rankdir=LR fontcolor=black fontname="monospace" nodesep=1.0 size="7.75,10.25"]
+    node [fontname="monospace" fontsize=10 color = "grey"]
+    edge [fontname="monospace" color="black" fontsize=10]
+
+    Q0 [label="sleep" shape="circle"]
+    Q1 [label="grind" shape="circle"]
+    Q2 [label="chill" shape="circle"]
+    Q3 [label="sports" shape="circle"]
+    Q4 [label="ill" shape="circle"]
+    Q5 [label="dead" shape="doublecircle"]
+    Q6 [label="start" shape="circle"]
+
+    Q6 -> Q0
+    Q0 -> Q1
+    Q0 -> Q3
+    Q0 -> Q2
+    Q1 -> Q3
+    Q1 -> Q2
+    Q1 -> Q5
+    Q4 -> Q5
+    Q3 -> Q4
+    Q2 -> Q1
+    Q2 -> Q2
+    Q4 -> Q1
+    Q5 -> Q5
+    Q5 -> Q0
+}
